@@ -1,0 +1,249 @@
+body {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 2em;
+}
+
+.r1{
+    border-radius: 40%; /* Makes the video circular */
+        width: 150px;
+        height: 80px;
+        object-fit: cover;
+        padding-right: 40px;
+        padding-left: 40px;
+}
+.b1{
+    font-size: 100px;
+    font-family: "Georgia";
+    padding: 5px;
+    margin-bottom: 5px;
+    align-items: left;
+    justify-content: left;
+}
+#b3#b4{
+    margin-bottom: 5px;
+}
+#b2{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.hero {
+    height: 85vh;
+    display: inline-block;
+    margin: 0;    
+    padding-top: 5em;
+    padding-left: 6em;
+}
+p{margin: 0; /* Removes extra space */
+    padding: 0;
+    line-height: 1.2;
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+    .video-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle-video {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .text-section {
+        flex: 1;
+        text-align: center;
+        font-size: 30px;
+    }
+    .cta-button {
+        padding: 10px 20px;
+        height: 100px;
+        width: 300px;
+        font-size: 2rem;
+        background: rgb(0, 0, 0);
+        color: white;
+        border: 5px solid black;
+        border-radius: 100px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    .cta-button:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(6, 6, 6);
+        border-color: black;
+    }
+    .project-view {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: white;
+        text-align: center;
+    }
+
+    .act {
+        padding: 50px;
+        font-size: 100px;
+        font-family: "Georgia";
+        align-items: left;
+    justify-content: left;
+    }
+    .inline-video {
+        width: 100px;
+        height: 90px;
+        vertical-align: left;
+        border-radius: 80%;
+    }
+    .gallery {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+        font-family: "Georgia";
+    }
+    .gallery-row {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        width: 80%;
+    }
+    .gallery-item {
+        position: relative;
+        width: 500px;
+        height: 700px;
+        margin: auto;
+        padding: 20px;
+    }
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 80px;
+    }
+    .gallery-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+    }
+    .hover-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .gallery-image {
+        opacity: 0;
+    }
+    .image-container:hover .hover-video {
+        opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+        .gallery-row {
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery-item {
+            max-width: 90%;
+            height: auto;
+        }
+        .act {
+            font-size: 1.5rem;
+            padding: 30px;
+        }
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .menu-btn {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    
+    .menu-overlay.open {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin: 20px 0;
+    }
+    
+    nav ul li a {
+        color: white;
+        font-size: 2rem;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: lightgray;
+    }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuberto Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">cuberto</div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+    
+
+    <!-- Fullscreen Menu Overlay -->
+    <div id="menu-overlay" class="menu-overlay">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <nav>
+            <ul>
+                <li><a href="#">What we do</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="blob"></div>
+        <div class="b1">
+            <p id="b3">We are a digital</p>
+            <video class="r1" width="90"  height="100" autoplay muted loop id="b2" >
+                <source src="vid1.mp4" type="video/mp4">
+            </video><p id="b2">design and</p>
+            
+            <p id="b4">motion agency</p>
+        </div>
+        
+        
+    </section>
+    
+    <section class="container">
+        <!-- Video Section -->
+        <div class="video-section">
+            <video autoplay muted loop class="circle-video">
+                <source src="vid2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Text and Button Section -->
+        <div class="text-section">
+            <p id="t1">Cuberto is a leading digital product agency focused on branding, UI/UX design, mobile, and web development.</p>
+            <button class="cta-button">What we do</button>
+        </div>
+    </section>
+    
+    <!-- Featured Projects -->
+    <section class="project-view">
+    
+    <section class="act">
+        <h1>Featured <br> <span class="video-container"><video autoplay muted loop class="inline-video">
+            <source src="vid3.mp4" type="video/mp4">
+        </video></span> Projects</h1>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="gallery">
+        <div class="gallery-row">
+        <div class="gallery-item">
+            <div class="image-container" onclick="redirectTo('https://cuberto.com/projects/puntopago/')" onmouseover="playVideo(this)" onmouseleave="pauseVideo(this)">
+                <img src="img1.png" alt="Design 1" class="gallery-image">
+                <video class="hover-video" muted>
+                    <source src="vid4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h1><B>Punto Pago -</B> The First Super-App in Latin America</h1>
+        </div>
+        <div class="gallery-item">
+            <div class="image-container" onclick="redirectTo('https://cuberto.com/projects/cisco/')" onmouseover="playVideo(this)" onmouseleave="pauseVideo(this)">
+                <img src="img2.png" alt="Design 2" class="gallery-image">
+                <video class="hover-video" muted>
+                    <source src="vid5.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h1><B>Cisco -</B> Cloud based network managment</h1>
+        </div>
+        </div>
+        <div class="gallery-row">
+        <div class="gallery-item">
+            <div class="image-container" onclick="redirectTo('https://cuberto.com/projects/qvino/')"onclick="redirectTo('https://cuberto.com/projects/puntopago/')" onmouseover="playVideo(this)" onmouseleave="pauseVideo(this)">
+                <img src="img3.png" alt="Design 3" class="gallery-image">
+                <video class="hover-video" muted>
+                    <source src="vid6.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h1><B>Qvino -</B> Wine marketplace with interactive learning </h1>
+        </div>
+        <div class="gallery-item">
+            <div class="image-container" onclick="redirectTo('https://cuberto.com/projects/riyadh/')" onmouseover="playVideo(this)" onmouseleave="pauseVideo(this)">
+                <img src="img4.png" alt="Design 4" class="gallery-image">
+                <video class="hover-video" muted>
+                    <source src="vid7.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h1><B>Riyadh -</B> Official website of Riyadh, Saudi Arabia's capital</h1>
+        </div>
+    </div>
+    </section>
+</section>
+</body>
+</html>
